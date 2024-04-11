@@ -3,6 +3,6 @@ from django.http import HttpResponse
 from django.template import loader
 # Create your views here.
 def contacts(request):
-     template = loader.get_template('contactus.html')
+     template = loader.get_template('contacts.html')
      contactcontent = template.render()
      return HttpResponse(contactcontent)
