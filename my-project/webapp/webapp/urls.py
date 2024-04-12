@@ -20,11 +20,18 @@ from home.views import Index
 from about.views import about
 from contacts.views import contacts
 from resources.views import resources
+from blog.views import blog
+from authentication.views import loginview, registerview
 
 urlpatterns = [
     path("", Index, name="Index"),
     path("about/", about, name="About"),
     path("contacts/", contacts, name="ContactUs"),
     path("resources/", resources, name="resources" ),
+    path("blog/", blog, name="blog" ),
+    path("student_login/", loginview, name="login"),
+    path("student_register/", registerview, name="register"),
+    
+    
 
 ]
